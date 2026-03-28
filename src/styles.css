@@ -1,0 +1,149 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #1f2937;
+  background-color: #f5f7fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.header h1 {
+  margin-bottom: 0.4rem;
+}
+
+.header p {
+  margin-top: 0;
+  color: #4b5563;
+}
+
+.controls-section {
+  margin: 1rem 0;
+}
+
+.search-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.search-wrap input,
+.user-form input {
+  padding: 0.65rem 0.8rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.form-section {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+.form-section h2 {
+  margin-top: 0;
+}
+
+.user-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.65rem;
+}
+
+.user-form button {
+  width: fit-content;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  padding: 0.65rem 1.1rem;
+  cursor: pointer;
+}
+
+.user-form button:hover {
+  background: #1d4ed8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.user-card,
+.details-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.user-card h3,
+.details-card h1 {
+  margin-top: 0;
+}
+
+.user-card p,
+.details-card p {
+  margin: 0.45rem 0;
+  color: #374151;
+}
+
+.user-card span,
+.details-card span {
+  font-weight: 600;
+}
+
+.card-link,
+.back-link {
+  display: inline-block;
+  margin-top: 0.7rem;
+  color: #1d4ed8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.card-link:hover,
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.status-message {
+  margin: 1rem 0;
+  color: #334155;
+}
+
+.status-message.error {
+  color: #b91c1c;
+}
+
+@media (min-width: 640px) {
+  .user-form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
